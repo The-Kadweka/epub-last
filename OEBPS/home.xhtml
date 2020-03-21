@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<title>The Rain Bird</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<script>
+function myFunction() {
+
+var s = document.getElementById('item1');
+var item1 = s.options[s.selectedIndex].value;
+
+if (item1 == 1) {
+	document.getElementById("kat").innerHTML="0/1";
+}
+else if (item1 == 2) {
+		document.getElementById("kat").innerHTML="0/1";
+}
+else if (item1 == 3) {
+	 document.getElementById("kat").innerHTML="1/1";
+}
+}
+</script>
+</head>
+<body>
+<div class="chap4" id="chap4">
+<section aria-label="Back Cover" class="chapter" title="Chapter 4" epub:type="chapter"></section>
+<span id="page4" title="Page 4" epub:type="pagebreak" role="doc-pagebreak"></span>
+<div class="titleimg4">
+ <select id="item4" name="Item 4">
+			<option></option>
+			<option value="1">Camera</option>
+			<option value="2">Microphone</option>
+			<option value="3">Tripod</option>
+		</select>
+		<button onclick="myFunction()">Go!</button>
+		<p id="kat">
+		</p>
+ </div>
+</div>
+</body>
+</html>
